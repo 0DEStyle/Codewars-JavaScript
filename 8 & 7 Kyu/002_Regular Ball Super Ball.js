@@ -12,7 +12,7 @@ ball2.ballType     //=> "super"
 */
 
 //***************Solution********************
-//some comment here
+//set default ballType as "regular", then set whatever the user enters.
 var Ball = function(ballType = "regular"){
   this.ballType = ballType;
   }
