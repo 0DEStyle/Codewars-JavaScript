@@ -12,3 +12,4 @@ const greet = (name) => 'Hello, ' + name + ' how are you doing today?'
 
 //string interpolation
 const greet = name => `Hello, ${name} how are you doing today?`;
+note!!!!! don't use ' apostrophe , use ` grave accent, or it won't work
