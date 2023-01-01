@@ -5,6 +5,6 @@ add .js
 */
 
 //***************Solution********************
-//some comment here
+//Then simiplfied into one line by using an Lambda expression with Enumerable methods.
 
 //****************Sample Test*****************
