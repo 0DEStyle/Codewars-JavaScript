@@ -6,7 +6,7 @@ Lambda
 const goals = (a,b,c) => a + b + c;
 
 
-String Manipulation
+- String Manipulation -
 //reverse string
 const str =  str.split("").reverse().join("");
 
@@ -23,3 +23,7 @@ const greet = (name) => 'Hello, ' + name + ' how are you doing today?'
 //string interpolation
 const greet = name => `Hello, ${name} how are you doing today?`;
 note!!!!! don't use ' apostrophe , use ` grave accent, or it won't work
+
+- Array -
+//check array include element
+const include = (arr, item) => arr.includes(item);
