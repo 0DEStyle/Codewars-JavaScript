@@ -1,6 +1,11 @@
 print
 console.log(x)
 
+Math
+//round number to 2 decimal place
+const twoDecimalPlaces = n =>  Number(n.toFixed(2)); 
+//note the alternative below will show different result, because of rounding error
+const twoDecimalPlaces = n =>  n.toFixed(2);
 
 Lambda 
 const goals = (a,b,c) => a + b + c;
