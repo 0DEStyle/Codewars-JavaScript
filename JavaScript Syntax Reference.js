@@ -27,7 +27,13 @@ const greet = (name) => 'Hello, ' + name + ' how are you doing today?'
 
 //string interpolation
 const greet = name => `Hello, ${name} how are you doing today?`;
-note!!!!! don't use ' apostrophe , use ` grave accent, or it won't work
+//note!!!!! don't use ' apostrophe , use ` grave accent, or it won't work
+
+//Regex replace end of sentence !!! to nothing
+//+ matches the previous token between one and unlimited times, as many times as possible, giving back as needed (greedy)
+//$ asserts position at the end of the string, or before the line terminator right at the end of the string (if any)
+
+const remove = s => s.replace(/!+$/, '');
 
 - Array -
 //check array include element
