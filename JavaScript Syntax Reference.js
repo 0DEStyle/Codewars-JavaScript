@@ -7,6 +7,17 @@ const twoDecimalPlaces = n =>  Number(n.toFixed(2));
 //note the alternative below will show different result, because of rounding error
 const twoDecimalPlaces = n =>  n.toFixed(2);
 
+//simple calculator
+//try catch for error
+//eval: evaluates JavaScript code represented as a string and returns its completion value. 
+//else return "unknown value"
+function calculator(a,b,sign) {
+  try
+    { return eval(a+sign+b); }
+  catch(e)
+    { return "unknown value"; }
+}
+
 Lambda 
 const goals = (a,b,c) => a + b + c;
 
