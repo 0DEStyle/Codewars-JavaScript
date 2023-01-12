@@ -47,6 +47,13 @@ const greet = name => `Hello, ${name} how are you doing today?`;
 const remove = s => s.replace(/!+$/, '');
 
 - Array -
+//create an array
+let result = []
+
+//push i into result, store in array
+for (let i = int; i<=limit ; i+=int) 
+    result.push(i)
+
 //check array include element
 const include = (arr, item) => arr.includes(item);
 
