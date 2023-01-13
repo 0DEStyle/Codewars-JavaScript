@@ -9,6 +9,7 @@ const twoDecimalPlaces = n =>  n.toFixed(2);
 //Difference between 2 Array a & b
 Math.abs(a - b);
 //product of list "a".
+//x and y meaning a.reduce((previous, current) => previous * current)
 a.reduce((x, y)=> x*y, 1);
 
 //simple calculator
