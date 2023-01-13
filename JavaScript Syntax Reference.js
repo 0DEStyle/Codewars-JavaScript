@@ -6,6 +6,10 @@ Math
 const twoDecimalPlaces = n =>  Number(n.toFixed(2)); 
 //note the alternative below will show different result, because of rounding error
 const twoDecimalPlaces = n =>  n.toFixed(2);
+//Difference between 2 Array a & b
+Math.abs(a - b);
+//product of list "a".
+a.reduce((x, y)=> x*y, 1);
 
 //simple calculator
 //try catch for error
