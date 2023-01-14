@@ -28,6 +28,10 @@ const goals = (a,b,c) => a + b + c;
 
 
 - String Manipulation -
+  
+//split string with a space, then add element itself and its length
+var addLength = str => str.split(' ').map(x => x + ' ' + x.length);
+
 //reverse string
 const str =  str.split("").reverse().join("");
 
