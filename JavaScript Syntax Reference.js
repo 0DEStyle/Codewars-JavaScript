@@ -2,6 +2,12 @@ print
 console.log(x)
 
 Math
+
+//finding sum of elements without using for loop 
+//using sum of an Arithmetic Series Formula 
+//https://www.youtube.com/watch?v=SXRQcxt6jsk
+const getSum = (a, b)=> (Math.abs(a - b) + 1) * (a+b) / 2;
+
 //round number to 2 decimal place
 const twoDecimalPlaces = n =>  Number(n.toFixed(2)); 
 //note the alternative below will show different result, because of rounding error
