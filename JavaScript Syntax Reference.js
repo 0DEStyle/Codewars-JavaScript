@@ -35,6 +35,9 @@ const goals = (a,b,c) => a + b + c;
 
 - String Manipulation -
   
+//join string together with something in between
+  const printArray=array=>array.join();
+  
 //split string with a space, then add element itself and its length
 var addLength = str => str.split(' ').map(x => x + ' ' + x.length);
 
