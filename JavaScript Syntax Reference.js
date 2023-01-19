@@ -66,6 +66,9 @@ const remove = s => s.replace(/!+$/, '');
 
 - Array -
   
+//Count the occurrence of a letter, split the string whenever it reaches the "letter", then count the elements.
+const strCount = (str, letter)=>str.split(letter).length-1;
+
 //find array length
 const getLength = array => array.length;
 
