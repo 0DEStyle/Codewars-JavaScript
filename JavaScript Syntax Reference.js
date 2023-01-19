@@ -65,6 +65,24 @@ const greet = name => `Hello, ${name} how are you doing today?`;
 const remove = s => s.replace(/!+$/, '');
 
 - Array -
+  
+//find array length
+const getLength = array => array.length;
+
+//last element of array
+const getLast = array => array[array.length - 1];
+
+//add something into array
+pushElement = a => {a.push(4); return a};
+//or
+const pushElement = array => array.concat(0);
+
+//remove last element
+popElement = a => {a.pop(); return a};
+//or
+const popElement = array => array.splice(0, array.length - 1);
+
+
 //create an array
 let result = []
 
