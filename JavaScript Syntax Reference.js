@@ -65,7 +65,10 @@ const greet = name => `Hello, ${name} how are you doing today?`;
 const remove = s => s.replace(/!+$/, '');
 
 - Array -
-  
+ 
+//compare 2 arrays and remove duplicates
+array1 = array1.filter(val => !array2.includes(val));
+
 //Count the occurrence of a letter, split the string whenever it reaches the "letter", then count the elements.
 const strCount = (str, letter)=>str.split(letter).length-1;
 
