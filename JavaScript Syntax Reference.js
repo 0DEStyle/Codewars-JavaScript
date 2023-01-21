@@ -65,6 +65,11 @@ const greet = name => `Hello, ${name} how are you doing today?`;
 const remove = s => s.replace(/!+$/, '');
 
 - Array -
+  
+//Check if array is in ascending or descending order.
+const isSortedAndHow =(array)  =>
+array.reduce((n, item) => n !== false && item >= n && item) ? "yes, ascending" :
+array.reduce((n, item) => n !== false && item <= n && item) ? "yes, descending" : "no";
  
 //compare 2 arrays and remove duplicates
 array1 = array1.filter(val => !array2.includes(val));
