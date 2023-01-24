@@ -8,6 +8,9 @@ Math
 //https://www.youtube.com/watch?v=SXRQcxt6jsk
 const getSum = (a, b)=> (Math.abs(a - b) + 1) * (a+b) / 2;
 
+//filter non odd numbers
+var noOdds = values => values.filter(x => x % 2 === 0);
+
 //round number to 2 decimal place
 const twoDecimalPlaces = n =>  Number(n.toFixed(2)); 
 //note the alternative below will show different result, because of rounding error
