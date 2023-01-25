@@ -69,6 +69,16 @@ const remove = s => s.replace(/!+$/, '');
 
 - Array -
   
+/*
+get the last value of the array: arr.pop()
+value the array starts with: arr[0]
+added +1, find length of the array: ( arr.pop() - arr[0] + 1 )
+.fill(0): the whole array filled with zeros
+.map((e,i) => i + arr[0]): added to each array value index, the first value of the initial array
+*/
+//this array function connect broken sequence back into normal, i.e. Input:  1,3,5,6,7,8 to Output: 1,2,3,4,5,6,7,8
+const pipeFix = arr => Array(arr.pop() - arr[0] + 1).fill(0).map((e,i) => i + arr[0])
+
 //Check if array is in ascending or descending order.
 const isSortedAndHow =(array)  =>
 array.reduce((n, item) => n !== false && item >= n && item) ? "yes, ascending" :
