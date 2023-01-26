@@ -1,6 +1,15 @@
 print
 console.log(x)
 
+Convertion
+//convert int to binary
+const toBinary = (n) => parseInt((n >>> 0).toString(2),10);
+//alternative 1
+//Unary plus (+) converts a number representation into a number:
+let toBinary = n => +n.toString(2)
+//alternative 2
+const toBinary = n => Number(n.toString(2)) ;
+
 Math
 
 //finding sum of elements without using for loop 
