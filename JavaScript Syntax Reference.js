@@ -47,6 +47,9 @@ const goals = (a,b,c) => a + b + c;
 
 - String Manipulation -
   
+//remove a specific letter in string s by n amount of time using recurssion method.
+const remove = (s,n) => n>0 ? remove(s.replace('!', ''), n-1) : s;
+
 //join string together with something in between
   const printArray=array=>array.join();
   
