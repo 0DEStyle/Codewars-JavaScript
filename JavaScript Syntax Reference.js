@@ -80,7 +80,9 @@ const greet = name => `Hello, ${name} how are you doing today?`;
 const remove = s => s.replace(/!+$/, '');
 
 - Array -
-  
+
+//fill/push/add elements to the array x amount of time
+  var websites = new Array(1000).fill("codewars");
 /*
 
 from length to  last index of array - first index of array + 1
