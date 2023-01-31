@@ -72,6 +72,8 @@ const greet = (name) => 'Hello, ' + name + ' how are you doing today?'
 //string interpolation
 const greet = name => `Hello, ${name} how are you doing today?`;
 //note!!!!! don't use ' apostrophe , use ` grave accent, or it won't work
+//join 2 strings.
+const combineNames = (a,b) => `${a} ${b}`;
 
 //Regex replace end of sentence !!! to nothing
 //+ matches the previous token between one and unlimited times, as many times as possible, giving back as needed (greedy)
