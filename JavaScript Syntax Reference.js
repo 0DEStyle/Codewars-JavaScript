@@ -47,6 +47,9 @@ const goals = (a,b,c) => a + b + c;
 
 - String Manipulation -
   
+//by returning name in array format, use [name] instead of name.
+const whoIsPaying = (name) => name.length <= 2 ?  [name] : [name, name.slice(0, 2)];
+  
 //remove a specific letter in string s by n amount of time using recurssion method.
 const remove = (s,n) => n>0 ? remove(s.replace('!', ''), n-1) : s;
 
