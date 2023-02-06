@@ -52,6 +52,10 @@ const goals = (a,b,c) => a + b + c;
   const capitalize = (s) => 
 [s.split('').map((c,i) => i % 2 == 0 ? c.toUpperCase(): c).join(''),
  s.split('').map((c,i) => i % 2 != 0 ? c.toUpperCase(): c).join('')];
+//or clever solution
+//[0,1] : using r that is first 0 and then 1 to upperCase first even and then odd indexes.
+function capitalize(s) => [0,1].map(r=>[...s].map((c,i)=>i%2===r?c.toUpperCase():c).join(''));
+
   
 //by returning name in array format, use [name] instead of name.
 const whoIsPaying = (name) => name.length <= 2 ?  [name] : [name, name.slice(0, 2)];
