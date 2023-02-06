@@ -47,6 +47,12 @@ const goals = (a,b,c) => a + b + c;
 
 - String Manipulation -
   
+//split the string s into character, for each character within s, if index is even, convert to uppercase
+//for the second parameter, for each character within s, if index is not even, convert to uppercase
+  const capitalize = (s) => 
+[s.split('').map((c,i) => i % 2 == 0 ? c.toUpperCase(): c).join(''),
+ s.split('').map((c,i) => i % 2 != 0 ? c.toUpperCase(): c).join('')];
+  
 //by returning name in array format, use [name] instead of name.
 const whoIsPaying = (name) => name.length <= 2 ?  [name] : [name, name.slice(0, 2)];
   
