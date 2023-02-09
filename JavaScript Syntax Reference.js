@@ -1,6 +1,12 @@
 print
 console.log(x)
 
+//check if a variable is Plural using less line.
+function  calculateAge(a,b) =>
+         a>b?`You will be born in ${a-b} year${a-b==1?"":"s"}.`:
+         a<b?`You are ${b-a} year${b-a==1?"":"s"} old.`:
+         `You were born this very year!`;
+
 Convertion
 //convert int to binary
 const toBinary = (n) => parseInt((n >>> 0).toString(2),10);
