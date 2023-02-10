@@ -6,6 +6,9 @@ function  calculateAge(a,b) =>
          a>b?`You will be born in ${a-b} year${a-b==1?"":"s"}.`:
          a<b?`You are ${b-a} year${b-a==1?"":"s"} old.`:
          `You were born this very year!`;
+variable
+//check type, if input is string, output Zach, if input is a number, output Monica, else output the dog.
+const cookie = (x) => `Who ate the last cookie? It was ${{string:`Zach`,number:`Monica`}[typeof x] || 'the dog'}!`
 
 Convertion
 //convert int to binary
