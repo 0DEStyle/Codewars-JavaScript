@@ -196,3 +196,27 @@ www. matches www.
 /g global search
 */
 domainName = (url) => url.replace(/.+\/\/|www.|\..+/g, '')
+
+/*RegexPattern.test(str)
+^ begin $ end
+\d check if character is a single digit
+
+or
+[1-9]/d between 1 to 9, meaning no 0, because 01 is considered invalid, then follow by 1 extra digit
+
+or
+1/d/d check character starts with 1 follow by 2 extra digits
+
+or
+2([0-4]\d|5[0-5])  2 follow by 
+digit between 0 to 4 follow by a digit, meaning 200-249 or!!! 
+5 follow by digit 0-5, meaning 250-255
+
+(\.(?!$)|$)
+check if pattern start with . 
+?! negative lookahead next character can not match $ ending
+or $ ending.
+
+{4} match preceding token/pattern 4 times
+*/
+isValidIP = (str) => /^(([1-9]?\d|1\d\d|2[0-4]\d|25[0-5])(\.(?!$)|$)){4}$/.test(str);
