@@ -97,6 +97,25 @@ const greet = name => `Hello, ${name} how are you doing today?`;
 //join 2 strings.
 const combineNames = (a,b) => `${a} ${b}`;
 
+//join + substring method ,example input (123) 456-7890
+function createPhoneNumber(numbers){
+  numbers = numbers.join('');
+  return '(' + numbers.substring(0, 3) + ') ' 
+      + numbers.substring(3, 6) 
+      + '-' 
+      + numbers.substring(6);
+}
+//continue with replace method ,example input (123) 456-7890
+function createPhoneNumber(numbers){
+  var format = "(xxx) xxx-xxxx";
+  
+  for(var i = 0; i < numbers.length; i++)
+    format = format.replace('x', numbers[i]);
+  
+  return format;
+}
+
+
 //Regex replace end of sentence !!! to nothing
 //+ matches the previous token between one and unlimited times, as many times as possible, giving back as needed (greedy)
 //$ asserts position at the end of the string, or before the line terminator right at the end of the string (if any)
