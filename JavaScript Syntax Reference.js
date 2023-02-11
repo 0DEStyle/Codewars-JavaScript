@@ -179,3 +179,20 @@ const array1 = ['a', 'b', 'c'];
 for (const item of array1) {
   console.log(item);
 }
+
+
+Regex expression
+
+/*replace the following pattern to nothing. 
+. matches any character except linebreak
++ one or more
+\/\/ matches //
+| or
+www. matches www.
+| or
+\. matches .
+. matches any character except linebreak
++ one or more
+/g global search
+*/
+domainName = (url) => url.replace(/.+\/\/|www.|\..+/g, '')
