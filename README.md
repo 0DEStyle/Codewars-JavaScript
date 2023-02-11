@@ -13,7 +13,9 @@ then solutions in the middle and test cases at the very end. <br />
 ![alt text](https://github.com/0DEStyle/Codewars-JavaScript/blob/main/Challenge%20Format.png)
 
 ## Documentation Links
-TBA
+Syntax reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript <br/>
+## Useful Websites
+Regex expression explainer https://regexr.com/ <br/>
 
 
 
