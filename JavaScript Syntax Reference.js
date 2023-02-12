@@ -10,6 +10,15 @@ variable
 //check type, if input is string, output Zach, if input is a number, output Monica, else output the dog.
 const cookie = (x) => `Who ate the last cookie? It was ${{string:`Zach`,number:`Monica`}[typeof x] || 'the dog'}!`
 
+bigInt 
+//for high decimal place.
+function division(t, a, b) {
+  //1n convert 1 to big integer
+  var n = ((BigInt(t) ** BigInt(a) - 1n) / (BigInt(t) ** BigInt(b) - 1n)).toString();
+  //check if there is remainder between a and b, also n length is less than 100
+  return a % b === 0 && n.length < 100 ? n : "Not an integer with less than 100 digits";
+}
+
 Convertion
 //convert int to binary
 const toBinary = (n) => parseInt((n >>> 0).toString(2),10);
