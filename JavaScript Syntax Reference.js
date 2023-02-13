@@ -28,6 +28,9 @@ let toBinary = n => +n.toString(2)
 //alternative 2
 const toBinary = n => Number(n.toString(2)) ;
 
+//get Char ASCII value
+console.log('a'.charCodeAt()); //where you can enter index > 'bbba'.charCodeAt(Index_HERE));
+
 Math
 
 //finding sum of elements without using for loop 
@@ -207,6 +210,19 @@ const array1 = ['a', 'b', 'c'];
 for (const item of array1) {
   console.log(item);
 }
+
+
+//print out/loop throught the entire array
+[...x]
+...a.Split(/[aieuo]/g)      
+
+//map, iterate through the array, like Select/Where in C#
+.map(x => x)
+
+//reduce, iterate through the array, and reduce, 0 means index start at 0
+//accumulate the character ASCII 
+[...x].reduce((a,b) => a + b.charCodeAt() - 96,0))
+
 
 
 Regex expression
