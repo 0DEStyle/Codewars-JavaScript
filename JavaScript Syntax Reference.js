@@ -10,6 +10,14 @@ variable
 //check type, if input is string, output Zach, if input is a number, output Monica, else output the dog.
 const cookie = (x) => `Who ate the last cookie? It was ${{string:`Zach`,number:`Monica`}[typeof x] || 'the dog'}!`
 
+//how to shorten long list of arguments
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+  let arr = [age1, age2, age3, age4, age5, age6, age7, age8]
+  return Math.floor(Math.sqrt(arr.map(a => a * a).reduce((b,c) => b + c)) / 2)
+}
+//alternative using Spread syntax (...)
+const predictAge = (...ages) => Math.hypot(...ages) / 2 | 0;
+
 bigInt 
 //for high decimal place.
 function division(t, a, b) {
@@ -32,6 +40,13 @@ const toBinary = n => Number(n.toString(2)) ;
 console.log('a'.charCodeAt()); //where you can enter index > 'bbba'.charCodeAt(Index_HERE));
 
 Math
+
+//The Math.hypot() static method returns the square root of the sum of squares of its arguments. 
+//| 0 floor the answer
+//It's a bitwise OR. Almost all bitwise operations automatically convert the operands to integers.
+//Performing a bitwise OR with a zero shouldn't change the input except for the fact that it also 
+//will be converted to an integer by truncating the decimal part.
+const predictAge = (...ages) => Math.hypot(...ages) / 2 | 0;
 
 //finding sum of elements without using for loop 
 //using sum of an Arithmetic Series Formula 
