@@ -1,5 +1,6 @@
 # Codewars Challenges-
 ## JavaScript Solutions
+![alt text](https://www.codewars.com/users/0DE/badges/micro?theme=light)<br />
 ⭐Date started: December 25, 2022
 
 ⭐This is a repository for Codewars JavaScript challenge solutions. <br />
