@@ -1,6 +1,10 @@
 # Codewars Challenges-
-## JavaScript Solutions
-![alt text](https://www.codewars.com/users/0DE/badges/micro?theme=light)<br />
+<div align="center"> 
+<img width="90%" height="90%" src="https://github.com/0DEStyle/Codewars-CSharp/blob/main/logo-codewars.png" hspace="20">
+  
+[![](https://www.codewars.com/users/0DE/badges/large)](https://www.codewars.com/users/0DE)
+</div>
+
 ⭐Date started: December 25, 2022
 
 ⭐This is a repository for Codewars JavaScript challenge solutions. <br />
